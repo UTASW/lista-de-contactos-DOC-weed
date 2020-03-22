@@ -1,31 +1,26 @@
-#container {
-  text-align: center;
+.hombre {
+    background-color: #2dd36f;
+    }
+.mujer{
+    background-color: pink;
+}
+.icon-label{
+    color: white;
+    text-align: center;
+    font-size: 20px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.nombre{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-content ion-toolbar {
-  --background: translucent;
+p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    
 }

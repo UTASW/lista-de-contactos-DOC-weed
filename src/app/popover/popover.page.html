@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>popover</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button (click)="move()" expand="block" fill="clear" shape="round">Ver contactos</ion-button>
+    <h1 style="text-align: center;">Agregar contacto</h1>
+    <ion-item id="name">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nombre" type="text"></ion-input>
+    </ion-item>
+    <ion-item id="number">
+        <ion-label position="floating">Telefono</ion-label>
+        <ion-input [(ngModel)]="numero" type="number"></ion-input>
+    </ion-item>
+    <ion-item id="email">
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input [(ngModel)]="correo" type="text"></ion-input>
+    </ion-item>
+    <ion-item id="notes">
+        <ion-label position="floating">Notas</ion-label>
+        <ion-input [(ngModel)]="notas" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"> Fecha de nacimiento MM/DD/YYYY</ion-label>
+        <ion-datetime [(ngModel)]="date" displayFormat="MM/DD/YYYY" min="1994-03-14" max="2012-12-09"></ion-datetime>
+    </ion-item>
+
+    <ion-item id="genere">
+        <ion-radio-group [(ngModel)]="genero">
+            <ion-list-header>
+                <ion-label>Genero</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>Hombre</ion-label>
+                <ion-radio slot="start" value="hombre"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mujer</ion-label>
+                <ion-radio slot="start" value="mujer"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+
+    </ion-item>
+    <ion-button color="success" expand="full" shape="round" (click)="addperson()">
+        <ion-icon slot="end" name="add-circle-outline"></ion-icon>
+    </ion-button>
+</ion-content>

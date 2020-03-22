@@ -1,20 +1,16 @@
-<ion-header translucent>
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-title>
+            Lista contacto
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+    <ion-button (click)="move()" expand="block" fill="clear" shape="round">
+        <ion-icon name="add"></ion-icon>
+    </ion-button>
+    <h1 style="text-align: center;">Mis contactos</h1>
+    <!--==============================================================================================================================-->
+    <app-comp></app-comp>
 </ion-content>
